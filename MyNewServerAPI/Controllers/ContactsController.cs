@@ -425,7 +425,7 @@ namespace ServerApp.Controllers
                         int new_id = chat.Messages.Max(x => x.Id) + 1;
                         message.Id = new_id;
                     }
-                    message.Sent = true;
+                    ///message.Sent = true;
                     chat.Messages.Add(message);
 
                 }
